@@ -49,6 +49,7 @@ class ComicController extends Controller
      */
     public function show(Comic $comic)  // utilizzando la dependency injection è sufficiente passare l'istanza del model Comic per ricavare l'id
     {
+        return view('comics.show', compact('comic'));
     }
 
     /**
