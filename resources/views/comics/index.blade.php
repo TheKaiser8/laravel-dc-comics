@@ -7,7 +7,7 @@
 @section('page-content')
     <section class="container">
         <h1 class="text-center">Archivio fumetti</h1>
-        <table class="table table-striped">
+        <table class="table table-striped align-middle">
             <thead>
                 <tr>
                     <th scope="col">Titolo</th>
@@ -26,8 +26,16 @@
                     <td>{{ $comic->type }}</td>
                     <td>{{ $comic->sale_date }}</td>
                     <td>{{ $comic->price }}€</td>
-                    <td><a href="{{ route('comics.show', $comic->id) }}" class="btn btn-info">Mostra dettagli</a></td>
-                    <td><a href="{{ route('comics.edit', $comic->id) }}" class="btn btn-warning">Modifica</a></td>
+                    <td>
+                        <a href="{{ route('comics.show', $comic->id) }}" class="btn btn-info">Mostra dettagli</a>
+                        <a href="{{ route('comics.edit', $comic->id) }}" class="btn btn-warning">Modifica</a>
+                        <form action="{{ route('comics.destroy', $comic) }}" method="POST" class="mt-2">
+                            @csrf
+                            @method('DELETE')
+                            
+                            <button type="submit" class="btn btn-danger">Cancella</button>
+                        </form>
+                    </td>
                 </tr>
                 @endforeach
             </tbody>

@@ -17,7 +17,7 @@
 
 <body>
 
-    <main>
+    <main class="py-3">
         @yield('page-content')
     </main>
 
