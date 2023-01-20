@@ -40,6 +40,7 @@
                 <input type="text" class="form-control" id="thumb" name="thumb" value="{{ $comic->thumb }}">
             </div>
             <button type="submit" class="btn btn-primary">Invia dati fumetto modificato</button>
+            <a href="{{ route('comics.index') }}" class="btn btn-light">Torna all'archivio</a>
         </form>
     </section>
 @endsection

@@ -39,6 +39,7 @@
             </div>
             <button type="submit" class="btn btn-primary">Invia dati fumetto inserito</button>
             <button type="reset" class="btn btn-secondary">Pulisci i campi</button>
+            <a href="{{ route('comics.index') }}" class="btn btn-light">Torna all'archivio</a>
         </form>
     </section>
 @endsection

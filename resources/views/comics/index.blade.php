@@ -31,7 +31,7 @@
                         <a href="{{ route('comics.edit', $comic->id) }}" class="btn btn-warning">Modifica</a>
 
                         <!-- Button modale (modalDelete) -->
-                        <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#modalDelete">Cancella</button>
+                        <button type="button" class="btn btn-danger mt-1" data-bs-toggle="modal" data-bs-target="#modalDelete">Cancella</button>
                     </td>
                 </tr>
                 @endforeach
