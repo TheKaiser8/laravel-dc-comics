@@ -20,6 +20,6 @@
                     <li><strong>Prezzo:</strong> {{ $comic->price }}€</li>
                 </ul>
             </div>
-          </div>
+        </div>
     </section>
 @endsection
