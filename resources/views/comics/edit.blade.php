@@ -34,7 +34,7 @@
             </div>
             <div class="mb-3">
                 <label for="date" class="form-label">Data di uscita*</label>
-                <input type="date" class="form-control" id="date" name="sale_date" min="0" max="2023-01-23" value="{{ old('sale_date', $comic->sale_date) }}" required>
+                <input type="date" class="form-control" id="date" name="sale_date" value="{{ old('sale_date', $comic->sale_date) }}" required>
                 @error('sale_date')
                     <div class="alert alert-danger">{{ $message }}</div>
                 @enderror

@@ -32,7 +32,7 @@
             </div>
             <div class="mb-3">
                 <label for="date" class="form-label">Data di uscita*</label>
-                <input type="date" class="form-control @error('sale_date') is-invalid @enderror" id="date" name="sale_date" value="{{ old('sale_date') }}" max="2023-01-23" required>
+                <input type="date" class="form-control @error('sale_date') is-invalid @enderror" id="date" name="sale_date" value="{{ old('sale_date') }}" required>
                 @error('sale_date')
                     <div class="alert alert-danger">{{ $message }}</div>
                 @enderror
